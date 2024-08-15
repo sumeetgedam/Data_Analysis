@@ -24,7 +24,55 @@ Data Analysis on some famous datasets available online.
    - [Time Series Basics](https://www.kaggle.com/code/sumeetgedam/time-series-basics)
 
 - Implementation Points
-    - Explore Univariate and multivariate timeSeries
+    - Explored Univariate and multivariate timeSeries
+    - Visualized datasets to understand the Components of TimeSeries
+      - Trend
+        - Deterministic Trends
+        - Stochastic Trends
+      - Seasonality
+      - Cyclic Patterns
+      - Noise
+    - Models for Decomposition of TimeSeries
+      - Additive Model
+        - Additive Decomposition
+      - Multiplicative Model
+        - Multiplicative Decomposition
+    - Visualized the Seasonality in datasets
+    - TimeSeries Forecasting Techniques
+      - Moving Average
+        - Centred Moving Average
+        - Trailing Moving Average
+    - Handling Missing Values
+    - Forcasting Requirements
+      - Outliers
+      - Resampling
+      - Up-sampling
+      - Down-sampling
+    - Measuring Accuracy
+      - Mean Absolute Error
+      - Mean Absolute Percentage Error
+      - Mean Squared Error
+      - Root Mean Square Error
+    - ETS ( Error , Trend, Seasonality ) Models
+      - SES
+        - Simple smoothing with additive errors
+      - Holt
+        - Holt's linear method with additive errors
+          - Double Exponential Smoothing
+      - Holt-Winters
+        - Holt Winter's linear method with additive errors
+          - Multi-step forecast
+    - Auto Regressive Models
+      - Auto-Correlation function ( ACF ), Partial Auto-Correlation function ( PACF )
+      - Stationarity check using Dickey Fuller Test
+      - ARIMA Model ( AutoRegressive Integrated Moving Average )
+      - Auto ARIMA
+        - using AIC ( Akaike Information Criterion ) and BIC (Bayesian Information Criterion ) for model selection
+
+      
+
+
+
 
 ###  Premier League Data Analysis
 
