@@ -5,13 +5,43 @@ Data Analysis on some famous datasets available online.
 ## Content :clipboard:
 
 1. [Kaggle](#kaggle)
+
+    - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
     - [Diamond Prices Data Analysis](#diamond-prices-data-anaysis)
     - [Premier League Data Analysis](#premier-league-data-analysis)
-    - [Titanic Survival Data Analysis](#titanic-data-anaysis)
+    - [Titanic Survival Data Analysis](#titanic-data-anaysis)    
     
 
 ## Kaggle
+
+### Time Series EDA on World War II
+
+- Dataset
+  - [Aerial Bombing Operations in World War II](https://www.kaggle.com/datasets/usaf/world-war-ii)
+  - [Weather Conditions in World War Two](https://www.kaggle.com/datasets/smid80/weatherww2)
+
+- Notebook
+  - [Time Series EDA World War II](https://www.kaggle.com/code/sumeetgedam/time-series-eda-world-war-ii)
+
+- Implementation Points
+  - cleaned data to remove uncertainty to ease visualization
+  - used scattergeo to see the Bombing path, weather station location
+  - weather data was not staionary as per first Dickey-Fuller test
+  - used popular methods to get a constant mean
+    - moving average
+    - differencing method
+  - things considered to believe data is now 99% stationary
+    - by looking at plot , mean looks constant
+    - variance also looked constant
+    - test stats from Dickey-Fuller test is smaller that 1% of critical values
+  - Forecasted Time Series 
+    - used output from differencing method
+    - used prediction method ARIMA after finding the constant by ACF, PACF
+    - visualized the ARIMA model prediction and got the mean squared error
+
+    
+
 
 ### Time Series Basics
 
