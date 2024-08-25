@@ -8,12 +8,15 @@ Data Analysis on some famous datasets available online.
 
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
-    - [Diamond Prices Data Analysis](#diamond-prices-data-anaysis)
+    - [NBA Data Analysis](#nba-data-analysis)
     - [Premier League Data Analysis](#premier-league-data-analysis)
+    - [Diamond Prices Data Analysis](#diamond-prices-data-anaysis)
     - [Titanic Survival Data Analysis](#titanic-data-anaysis)    
     
 
 ## Kaggle
+
+### 
 
 ### Time Series EDA on World War II
 
@@ -40,7 +43,6 @@ Data Analysis on some famous datasets available online.
     - used prediction method ARIMA after finding the constant by ACF, PACF
     - visualized the ARIMA model prediction and got the mean squared error
 
-    
 
 
 ### Time Series Basics
@@ -99,9 +101,25 @@ Data Analysis on some famous datasets available online.
       - Auto ARIMA
         - using AIC ( Akaike Information Criterion ) and BIC (Bayesian Information Criterion ) for model selection
 
-      
 
-
+### NBA Data Analysis
+  - Dataset
+    - [NBA Players stats(2023 season)](https://www.kaggle.com/datasets/amirhosseinmirzaie/nba-players-stats2023-season)
+  
+  - Notebook
+    - [NBA Data Analysis](https://www.kaggle.com/code/sumeetgedam/nba-data-analysis)
+  
+  - Implementation Points
+    - Eplored the datataset and cleaned it for ease of use.
+    - Used plotly.express and plotly.graph_objects to visualize Players Position with respect to various attributes
+    - Dropped columns based on high correlation to improve performance of analysis
+    - Modeling the data using: 
+      - Linear Regression
+      - K-Nearest Neighbors (KNN)
+      - Decision Tree Regressor
+      - RandomForest Regressor
+    - Calculated the r2 score , which showed Linear Regression giving the best value out of all
+    - Visual Comparison of Predicted vs Actual Points
 
 
 ###  Premier League Data Analysis
