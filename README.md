@@ -8,6 +8,7 @@ Data Analysis on some famous datasets available online.
 
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
+    - [E Commerce Analysis](#e-commerce-analysis)
     - [NBA Data Analysis](#nba-data-analysis)
     - [Premier League Data Analysis](#premier-league-data-analysis)
     - [Diamond Prices Data Analysis](#diamond-prices-data-anaysis)
@@ -15,8 +16,6 @@ Data Analysis on some famous datasets available online.
     
 
 ## Kaggle
-
-### 
 
 ### Time Series EDA on World War II
 
@@ -100,6 +99,27 @@ Data Analysis on some famous datasets available online.
       - ARIMA Model ( AutoRegressive Integrated Moving Average )
       - Auto ARIMA
         - using AIC ( Akaike Information Criterion ) and BIC (Bayesian Information Criterion ) for model selection
+
+
+### E-Commerce Analysis
+
+  - Dataset
+    - [E-Commerce Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
+
+  - Notebook
+    - [ECommerce Data Analysis](https://www.kaggle.com/code/sumeetgedam/ecommerce-data-analysis)
+
+  - Implementation Points
+    - Exploring and Columnwise visualization for each column
+    - Analyzing negative values to understand the dataset and adding features to it
+    - Detecting outliers using scatterplot and quantile
+    - Visualizing UnitPrice, Quantity, Sales ( feature )
+    - Cleaned data for modeling and Bucketized UnitPrice, Quantity, dates
+    - Scaled feature and tested the data on different models:
+      - Linear Regression
+      - DecisionTree Regessor
+      - Random Forest Regression
+    - Calculated Mean Absolute Error , Mean Squared Error and  R2 Score of each of them.
 
 
 ### NBA Data Analysis
