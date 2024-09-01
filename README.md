@@ -8,6 +8,8 @@ Data Analysis on some famous datasets available online.
 
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
+    - [Spotify Analysis](#spotify-analysis)
+    - [Airbnb Analysis](#airbnb-analysis)
     - [E Commerce Analysis](#e-commerce-analysis)
     - [NBA Data Analysis](#nba-data-analysis)
     - [Premier League Data Analysis](#premier-league-data-analysis)
@@ -101,13 +103,53 @@ Data Analysis on some famous datasets available online.
         - using AIC ( Akaike Information Criterion ) and BIC (Bayesian Information Criterion ) for model selection
 
 
+### Spotify Analysis
+
+  - Dataset
+    - [Spotify Datasets](https://www.kaggle.com/datasets/lehaknarnauli/spotify-datasets)
+
+  - Notebook
+    - [Spotify Analysis](https://www.kaggle.com/code/sumeetgedam/spotify-dataanalysis-and-predictions)
+
+  - Implementation Points
+    - The dataset provides audio information for almost 600k Spotify tracks with 20 features
+    - Different Visualization including WordCloud, barplot gave us the most popular artist, number of songs per year, most popular songs, etc
+    - Plotting histogram and boxplot showed the skewness of features in dataset
+    - Added a new feature of song being highly popular if popularity is greater than 50, which was resampled using RandomOverSampler
+    - Built a pipeline for columns
+      - duration : SimpleImputer, FunctionTransformer, RobustScaler
+      - categorical: SimpleImputer, OneHotEncoder
+      - numerical columns : SimpleImputer, RobustScaler
+    - Used this Pipeline on LogisticRegression, RandomForestClassifier, XGBClassifier to visualize the confusion matric for each of them as heatmap
+    - The Importance Feature in each of them were found to be explicit, loudness, explicit column of the dataset. 
+
+
+### Airbnb Analysis
+
+  - Dataset
+    - [NYC Airbnb Dataset](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data)
+
+  - NoteBook
+    - [Airbnb Data Anaysis and Prediction](https://www.kaggle.com/code/sumeetgedam/airbnb-dataanalysis-and-prediction)
+
+  - Implemention Points
+    - The Dataset describes the listing activity and metrics in NYC for 2019
+    - used folium to visualize geographic location on an interactive map
+    - Filled NaN values using KNNImputer
+    - Analyzed categorical and numerical variable by plot countplots on them
+    - Visualized Distribution by Neighbourhood groups which showed Manhattan being the priciest neighbourhood_group for Entire home / apt
+    - Analysized outliers and replaced them with threshold which was calculated using quantile 1 and quantile 3
+    - Added features and predicted the data using different model 
+    - The R2Score, Mean absolute error, Mean squared error, root mean squared error values showed CatBoostRegressor being the best even after Hyperparameter optimization
+    - Visualizing the feature importance showed minimum_nights, annual_incoem, total_cost were the top three drivers for this model output
+
 ### E-Commerce Analysis
 
   - Dataset
     - [E-Commerce Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
 
   - Notebook
-    - [ECommerce Data Analysis](https://www.kaggle.com/code/sumeetgedam/ecommerce-data-analysis)
+    - [E-Commerce Data Analysis](https://www.kaggle.com/code/sumeetgedam/ecommerce-data-analysis)
 
   - Implementation Points
     - Exploring and Columnwise visualization for each column
