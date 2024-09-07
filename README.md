@@ -2,6 +2,8 @@
 
 Data Analysis on some famous datasets available online.
 
+![](./assets/dataset-cover.png)
+
 ## Content :clipboard:
 
 1. [Kaggle](#kaggle)
