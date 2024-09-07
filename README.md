@@ -2,7 +2,7 @@
 
 Data Analysis on some famous datasets available online.
 
-![](./assets/dataset-cover.png)
+![](./Assets/dataset-cover.png)
 
 ## Content :clipboard:
 
