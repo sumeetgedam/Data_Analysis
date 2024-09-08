@@ -8,6 +8,7 @@ Data Analysis on some famous datasets available online.
 
 1. [Kaggle](#kaggle)
 
+    - [Market Analysis Basics](#stock-market-analysis)
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
     - [Spotify Analysis](#spotify-analysis)
@@ -20,6 +21,22 @@ Data Analysis on some famous datasets available online.
     
 
 ## Kaggle
+
+### Stock Market Analysis
+
+- Dataset
+  - Yahoo Fianace by Python [yfinance](https://github.com/ranaroussi/yfinance)
+
+- NoteBook
+  - [Market Analysis Basics](https://www.kaggle.com/code/sumeetgedam/stock-market-analysis-basics)
+
+- Implementation Points
+  - Downloaded stock market data frmo Yahoo Finance website using yfinance
+  - Explored and visualized time-series data using pandas, matplotlib, seaborn
+  - Measured the correlation between stocks
+  - Measured the risk to invest in them and plotted expected risk vs return
+  - Predicted closing price using LSTM for Nvidia (NVDA)
+
 
 ### Time Series EDA on World War II
 
@@ -245,3 +262,8 @@ Data Analysis on some famous datasets available online.
    - Reviwed the train and test data provided
    - Calculated the survival rate of men and women
    - Predicted suvival rate using ***RandomForestClassifier***
+
+
+# Reads
+
+- [Correlation](https://www.investopedia.com/terms/c/correlation.asp)
