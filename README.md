@@ -8,6 +8,7 @@ Data Analysis on some famous datasets available online.
 
 1. [Kaggle](#kaggle)
 
+    - [Market Analysis and EDA](#stock-market-analysis-and-eda)
     - [Market Analysis Basics](#stock-market-analysis)
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
     - [Time Series Basics](#time-series-basics)
@@ -17,10 +18,29 @@ Data Analysis on some famous datasets available online.
     - [NBA Data Analysis](#nba-data-analysis)
     - [Premier League Data Analysis](#premier-league-data-analysis)
     - [Diamond Prices Data Analysis](#diamond-prices-data-anaysis)
-    - [Titanic Survival Data Analysis](#titanic-data-anaysis)    
+    - [Titanic Survival Data Analysis](#titanic-data-anaysis)   
+
+2. [Read](#reads)
     
 
 ## Kaggle
+
+### Stock Market Analysis and EDA
+
+  - Dataset
+    - [Stock Market](https://www.kaggle.com/datasets/mahnazarjmand/stock-market)
+  
+  - NoteBook
+    - [Stock Market Analysis and EDA](https://www.kaggle.com/code/sumeetgedam/stock-market-analysis-and-eda)
+
+  - Implementation Points
+    - Explored the Dataset to understand the structure
+    - The NYSE Composite, NYA was the focus of analysis among othe available indices
+    - Cleaned the data by dropping NA values and filled some with ffill method
+    - Made *Date* attribute to datetime in pandas, to get price fluctuations over time
+    - Removed Outliers and visualized Adjcent Close over time(Date)
+    - used matplotlib, plotly to create pie charts and CandleStick on the refined data
+    - Visualized correlation between attributes, 100 days simple moving average, 200 days simple moving average with matplotlib
 
 ### Stock Market Analysis
 
