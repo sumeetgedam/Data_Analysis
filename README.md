@@ -8,6 +8,7 @@ Data Analysis on some famous datasets available online.
 
 1. [Kaggle](#kaggle)
 
+    - [S&P 500 Analysis and Prediction](#sp-500-analysis-and-prediction)
     - [Market Analysis and EDA](#stock-market-analysis-and-eda)
     - [Market Analysis Basics](#stock-market-analysis)
     - [Time Series EDA on World War II](#time-series-eda-on-world-war-ii)
@@ -24,6 +25,24 @@ Data Analysis on some famous datasets available online.
     
 
 ## Kaggle
+
+### S&P 500 Analysis and Prediction
+
+  - Dataset
+    - [S&P 500 stock data](https://www.kaggle.com/datasets/camnugent/sandp500/data?select=getSandP.py)
+
+  - Notebook
+    - [S&P 500 Analysis and Prediction](https://www.kaggle.com/code/sumeetgedam/s-p-500-analysis-and-prediction/)
+  
+  - Implementation Points
+    - Explored dataset to understand data 
+    - The analysis was focused on AMAZON stock data
+    - Visualized the variation in Close, High, Low , Open using matplotlib
+    - Forecasting was done using Prophet, Facebook's libirary for time series forecasting
+    - Prophets plot and components showed the upward trend in Yearly as well as Monthly data of AMZN stocks
+    - plotly's graph_objects was used for creating OHLC(Open High Low Close) , CandleStick graph
+    - Analyzed American Airlines Stock for understanding seasonality trends
+    - Plotted monthly forecasted data to see the seasonal trends in each year 
 
 ### Stock Market Analysis and EDA
 
@@ -287,3 +306,4 @@ Data Analysis on some famous datasets available online.
 # Reads
 
 - [Correlation](https://www.investopedia.com/terms/c/correlation.asp)
+- [Prophet by Facebook for Forecasting](https://facebook.github.io/prophet/docs/quick_start.html)
